@@ -1,10 +1,19 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Controller, Get, Post, Res, Body } from '@nestjs/common';
+import { PollService } from './poll.service';
 
 
-@Controller('polls')
-export class PollsController {
+@Controller('poll')
+export class PollController {
+    constructor(private pollService: PollService) {}
+
+    @Get()
+    root() {
+        return "This is super cool"
+    }
+
     @Post()
-    submitVote() {
-        
+    submitVote(@Res() res, @Body() poll: string) {
+        this.pollService.create(poll);
+        res.render('index');
     }
 }
