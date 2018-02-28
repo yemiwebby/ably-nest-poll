@@ -9,8 +9,8 @@ export class PollService {
 
     create(poll) {
         const Ably = require('ably');
-        var ably = new Ably.Realtime('C0d5-w.eiJTaw:P_eRKDclpXwA3jZu');
-        var channel = ably.channels.get('quickstart');
+        var ably = new Ably.Realtime('YOUR KEY');
+        var channel = ably.channels.get('YOUR CHANNEL');
 
         const data = {
             points: 1,

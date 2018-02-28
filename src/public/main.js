@@ -38,8 +38,8 @@ if (chartContainer) {
     
     chart.render();
     
-    var ably = new Ably.Realtime('C0d5-w.eiJTaw:P_eRKDclpXwA3jZu');
-    var channel = ably.channels.get('quickstart');
+    var ably = new Ably.Realtime('YOUR KEY');
+    var channel = ably.channels.get('YOUR CHANNEL');
     channel.subscribe('vote', function(poll) {
         
         dataPoints = dataPoints.map(x => {
