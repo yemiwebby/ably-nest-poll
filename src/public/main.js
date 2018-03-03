@@ -6,7 +6,7 @@ form.addEventListener('submit', (e) => {
     const data = {movie: choice};
     
     axios.post('/poll', data).then( (data) => {
-        // console.log(data);
+        console.log(data);
     });
     e.preventDefault();
 });
