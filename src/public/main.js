@@ -39,7 +39,7 @@ if (chartContainer) {
     chart.render();
     
     var ably = new Ably.Realtime('YOUR_KEY');
-    var channel = ably.channels.get('YOUR_CHANNEL');
+    var channel = ably.channels.get('ably-nest');
     channel.subscribe('vote', function(poll) {
         
         dataPoints = dataPoints.map(x => {
