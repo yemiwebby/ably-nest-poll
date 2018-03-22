@@ -1,6 +1,6 @@
 const form = document.getElementById('opinion-form');
 
-// form submit event
+//  form submit event
 form.addEventListener('submit', (e) => {
     const choice = document.querySelector('input[name=movie]:checked').value;
     const data = {movie: choice};
