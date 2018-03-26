@@ -8,6 +8,7 @@ form.addEventListener('submit', (e) => {
     axios.post('/poll', data).then( (data) => {
         console.log(data);
     });
+    
     e.preventDefault();
 });
 
@@ -50,6 +51,7 @@ if (chartContainer) {
                 return x;
             }
         });
+
         chart.render();
     });
 }
