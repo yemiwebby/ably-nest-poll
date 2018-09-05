@@ -1,21 +1,45 @@
-<p align="left">
-  <a href="http://nestjs.com/" target="blank"><img src="http://kamilmysliwiec.com/public/nest-logo.png#1" alt="Nest Logo" /></a>
-</p>
+## Building Realtime Web Applications Using Nest.js and Ably
 
-<p align="Right">
-  <a href="http://ably.io/" target="blank"><img src="http://res.cloudinary.com/yemiwebby-com-ng/image/upload/v1520610686/ably-logo_r3tgfl.png" alt="Ably Logo" /></a>
-</p>
+Build a Realtime Web Application Using Nest.js and Ably.
 
-## Description
-  
-## Installation
+See the screenshot below:
 
+![ably-realtime](https://user-images.githubusercontent.com/19610753/45071355-b10cf200-b0cd-11e8-95a8-fb85a53cc606.png)
+
+
+
+## Link to tutorial
+[Here](https://hackernoon.com/building-real-time-web-applications-using-nest-js-and-ably-d85887e81f06)
+
+
+
+## Getting Started
+
+### Clone the repository
+```bash
+$ git clone https://github.com/yemiwebby/ably-nest-poll.git
+```
+
+### Change directory
+```bash
+$ cd ably-nest-poll
+```
+
+### Install dependencies
 ```bash
 $ npm install
 ```
 
-## Start
+### Start the application
 
+```bash
+ $ npm start
 ```
-$ npm run start
-```
+
+## Prerequisites
+To get the most out of this tutorial, a basic understanding of TypeScript and Node.js is advised. Do ensure that you have [Node.js](https://nodejs.org/en/) and [Yarn package manager](https://yarnpkg.com/lang/en/docs/install/#mac-stable) installed on your system.
+
+## Built With
+
+* [Nest.js](https://nestjs.com/) - A progressive Node.js framework for building efficient, reliable and scalable server-side applications.
+* [Ably](https://www.ably.io/) - An excellent realtime messaging platform that makes it easy to add realtime functionality to applications.
