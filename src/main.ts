@@ -1,15 +1,16 @@
 import { NestFactory } from '@nestjs/core';
-import { ApplicationModule } from './app.module';
-import * as express from 'express';
-import * as path from 'path';
+import { NestExpressApplication } from '@nestjs/platform-express';
+import { AppModule } from './app.module';
+import { join } from 'path';
 
 async function bootstrap() {
-	const app = await NestFactory.create(ApplicationModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-	app.use(express.static(path.join(__dirname, 'public')));
-	app.set('views', __dirname + '/views');
-	app.set('view engine', 'ejs');
+  // A public folder to serve static files
+  app.useStaticAssets(join(__dirname, '..', 'public'));
+  app.setBaseViewsDir(join(__dirname, 'views'));
+  app.setViewEngine('ejs');
 
-	await app.listen(3000);
+  await app.listen(3000);
 }
 bootstrap();
