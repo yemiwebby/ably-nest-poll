@@ -6,6 +6,6 @@ import { PollService } from './poll/poll.service';
 @Module({
   imports: [],
   controllers: [AppController, PollController],
-  components: [PollService],
+  providers: [PollService],
 })
-export class ApplicationModule {}
+export class AppModule {}
